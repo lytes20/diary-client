@@ -1,4 +1,4 @@
-import { Route, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 import { Signin } from './user/signin';
 import { Signup } from './user/signup';
 import { Diary } from './diary/diary';

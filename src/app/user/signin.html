@@ -1,14 +1,18 @@
 <!-- <div class="main"> -->
 <div class="sign-in">
-  <form (ngSubmit)="handleLogin()">
+  <form [formGroup]="authForm" (ngSubmit)="handleLogin()">
     <div class="form-item">
       <label> Email: </label>
-      <input type="text" placeholder="Enter your email" />
+      <input type="text" placeholder="Enter your email" [formControl]="email" />
     </div>
 
     <div class="form-item">
       <label> Password: </label>
-      <input type="text" placeholder="Enter your password" />
+      <input
+        type="text"
+        placeholder="Enter your password"
+        [formControl]="password"
+      />
     </div>
     <div class="form-item">
       <input type="submit" value="Sign In" />
