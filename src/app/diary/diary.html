@@ -1,0 +1,31 @@
+<div>
+  <div style="padding: 10px">
+    <button>New Entry</button>
+  </div>
+  <div
+    style="display: flex; width: 100%; border: 1px solid black; padding: 10px"
+  >
+    <div style="border: 1px solid black; padding: 10px">
+      <ul>
+        <li>Entry 1</li>
+        <li>Entry 2</li>
+        <li>Entry 3</li>
+      </ul>
+    </div>
+    <div style="border: 1px solid black; padding: 10px">
+      <form [formGroup]="entryForm" (ngSubmit)="handleCreateEntry()">
+        <div>
+          <label></label>
+          <input type="text" placeholder="title" [formControl]="title" />
+        </div>
+        <div>
+          <textarea
+            placeholder="Enter your entry detail here"
+            [formControl]="details"
+          ></textarea>
+        </div>
+        <input type="submit" value="submit" />
+      </form>
+    </div>
+  </div>
+</div>

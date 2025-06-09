@@ -4,6 +4,13 @@ export type User = {
   picture_url?: string;
 };
 
+export type Diary = {
+  _id: string;
+  user_id: string;
+  title: string;
+  details: string;
+};
+
 export const INITIAL_USER_STATE = {
   _id: '',
   email: '',
