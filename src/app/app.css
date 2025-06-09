@@ -3,3 +3,6 @@ nav {
   padding: 20px;
   text-align: right;
 }
+nav a {
+  margin-left: 10px;
+}
